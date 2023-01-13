@@ -1,0 +1,93 @@
+{
+  "version": "2.0",
+  "class": "dataset",
+  "label": "annual population survey - regional - employment by occupation",
+  "source": "ONS Crown Copyright Reserved",
+  "updated": "2023-1-13",
+  "value": [28684500, 197600, 100.0, null],
+  "id": ["time", "geography", "c_sex", "c_occpuk11h_0", "measure", "measures"],
+  "size": [1, 1, 1, 1, 2, 2],
+  "role": { "time": ["time"], "geo": ["geography"], "metric": ["measures"] },
+  "dimension": {
+    "time": {
+      "label": "date",
+      "category": {
+        "index": { "2021-12": 0 },
+        "label": { "2021-12": "Jan 2021-Dec 2021" }
+      },
+      "extension": { "metadata": [] }
+    },
+    "geography": {
+      "label": "geography",
+      "category": {
+        "index": { "2092957703": 0 },
+        "label": { "2092957703": "England and Wales" }
+      },
+      "extension": { "metadata": [] }
+    },
+    "c_sex": {
+      "label": "Sex",
+      "category": { "index": { "0": 0 }, "label": { "0": "All persons" } },
+      "extension": { "attributes": { "0": {} }, "metadata": [] }
+    },
+    "c_occpuk11h_0": {
+      "label": "Occupation",
+      "category": { "index": { "0": 0 }, "label": { "0": "Total" } },
+      "extension": { "attributes": { "0": {} }, "metadata": [] }
+    },
+    "measure": {
+      "label": "measure",
+      "category": {
+        "index": { "1": 0, "3": 1 },
+        "label": { "1": "Count", "3": "Rate" }
+      },
+      "extension": { "metadata": [] }
+    },
+    "measures": {
+      "label": "measures",
+      "category": {
+        "index": { "20100": 0, "20701": 1 },
+        "label": { "20100": "Value", "20701": "Confidence" },
+        "unit": {
+          "20100": {
+            "base": "Persons",
+            "type": "value",
+            "decimals": 0,
+            "label": "value",
+            "symbol": "",
+            "multiplier": 1,
+            "position": "end"
+          },
+          "20701": {
+            "base": "",
+            "type": "confidence",
+            "decimals": 1,
+            "label": "confidence",
+            "symbol": "",
+            "multiplier": 1,
+            "position": "end"
+          }
+        }
+      }
+    }
+  },
+  "extension": {
+    "warnings": [
+      { "message": "These figures are missing.", "status": "-" },
+      {
+        "message": " An issue with the collection of occupational data affected the\n
+          accuracy of the breakdowns of some detailed occupations, and\n  data derived from them. We are urging caution in the interpretation\n  of these detailed data as we resolve the issue.\n  https://www.ons.gov.uk/news/statementsandletters/occupationaldatainonssurveys\n   "
+      },
+      {
+        "message": " Rate is the percentage of employed people within each occupation.\n  "
+      }
+    ],
+    "contact": {
+      "name": "Nomis",
+      "telephone": "+44(0) 191 3342680",
+      "uri": "https://www.nomisweb.co.uk",
+      "email": "support@nomisweb.co.uk"
+    },
+    "subdescription": "previously unavailable"
+  }
+}
